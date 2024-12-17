@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css">
+</head>
+<body>
+        <!-- Floating Navbar -->
+        <nav class="floating-navbar">
+            <a href="#quoteSection"><i class="fa-solid fa-book-quran"></i></a>
+            <a href="#invitationSection"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#reseptionSection"><i class="fa-solid fa-calendar-days"></i></a>
+            <a href="#imageslider"><i class="fa-regular fa-image"></i></a>
+            <a href="#rsvpsection"><i class="fa-solid fa-list"></i></a>
+            <a href="#storysection"><i class="fa-solid fa-heart"></i></a>
+            <a href="#giftsection"><i class="fa-solid fa-gift"></i></a>
+          
+
+
+        </nav>
+
+        <!-- Floating Pause/Play Button -->
+    <button id="playPauseBtn" class="floating-btn"><i class="fa-solid fa-pause"></i></button>
+
+    <!-- Background Music -->
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="audio/Brian McKnight Jr  - Marry Your Daughter  Lyrics Terjemahan Indonesia.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Bagian Tampilan Utama -->
+    <section class="hero" id="hero">
+        <div class="content">
+            <p class="subtitle">THE WEDDING OF</p>
+            <h1 class="names">JAY & PRILI</h1>
+            <p class="dear">Dear,</p>
+            <p class="guest">LAILI QODIR, A.Md</p>
+            <button class="button" onclick="scrollToContent()" href=".next-section">Buka Undangan</button>
+        </div>
+    </section>
+<!-- Bagian Halaman Berikutnya -->
+    <section class="next-section">
+        <div class="next-content">
+            <p class="subtitle">THE WEDDING OF</p>
+            <div class="illustration">
+                <img src="img/ilustrasi.png" alt="Ilustrasi Pengantin">
+            </div>
+            <h2 class="names">JAY & PRILI</h2>
+            <p class="date">Minggu, 07 Juli 2024</p>
+            <div class="scroll-indicator">
+                <lottie-player 
+                    src="https://lottie.host/86829bdc-460c-4fb1-a902-01b8e09d3125/KiMMfIZvYX.json"
+                    background="transparent"  
+                    speed="1"  
+                    style="width: 50px; height: 50px; margin:0 auto"  
+                    loop  
+                    autoplay>
+                </lottie-player>
+            </div>
+        </div>
+    </section>
+    <!-- Bagian Kutipan Ayat -->
+    <section class="quote-section" id="quoteSection">
+        <div class="quote-content">
+            <div class="logo">
+                <img src="img/—Pngtree—holy quran with blue navy_6177236.png" alt=" ">
+            </div>
+            <p class="quote-text">
+                
+                وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةًۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ
+
+                <br>Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+                
+            </p>
+            <p class="quote-source">
+                (QS Ar-Rum : 21)
+            </p>
+        </div>
+    </section>
+    <section class="invitation-section" id="invitationSection">
+        <div class="invitation">
+            <p class="intro-text">
+                Maha suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah rahmatilah pernikahan kami:
+            </p>
+
+            <section class="couple-section">
+                <div class="couple">
+                    <img src="img/Bugis - Indonesia traditional clothing 🇮🇩.jpeg" alt="Groom" class="couple-img">
+                    <h2 class="name"><a href="https://www.instagram.com/jaaklingkooo?igsh=MWl2c3l5c3d4Z3RsNA=="><i class="fa-brands fa-instagram"></i>JAY </a></h2>
+                    <p class="description">Putra Bungsu dari Bapak H. Asnawi (Alm) & Ibu Hj. Sadiyah (Almh)</p>
+                </div>
+
+                <p class="and-symbol">&</p>
+
+                <div class="couple">
+                    <img src="img/Baju bodo modern - Indonesia dress 🇮🇩.jpeg" alt="Bride" class="couple-img">
+                    <h2 class="name"><a href="https://www.instagram.com/nnaprilia__?igsh=Y2o0Z2ZwYjVydzRh"><i class="fa-brands fa-instagram"></i> PRILI</a></h2>
+                    <p class="description">Putri Pertama dari Bapak Suprihatin & Ibu Siti Fatonah</p>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- Bagian resepsi dan lokasi -->
+    <section class="reseption-section" id="reseptionSection">
+        <div class="invitation-container">
+            <p class="intro">Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta Kerabat sekalian untuk menghadiri acara pernikahan kami:</p>
+    
+            <div class="event akad">
+                <h2>Akad Nikah</h2>
+                <p>Minggu, 07 Juli 2024</p>
+                <p>Pukul: 09.00 WIB</p>
+                <p>Tempat: Gedung Serbaguna Citraland Cibubur (Cileungsi)</p>
+            </div>
+    
+            <div class="event resepsi">
+                <h2>Resepsi</h2>
+                <p>Minggu, 07 Juli 2024</p>
+                <p>Pukul: 10.30 – 12.30 WIB</p>
+                <p>Tempat: Gedung Serbaguna Citraland Cibubur (Cileungsi)</p>
+            </div>
+    
+            <div class="location-button">
+                <a href="https://www.google.com/maps/place/Gedung+Serbaguna+Citraland+Cileungsi/@-6.4020028,107.0085971,15z/data=!4m6!3m5!1s0x2e69971a95ea875d:0xa04900ec77c03fdc!8m2!3d-6.4020028!4d107.0085971!16s%2Fg%2F11l6znxj9_?hl=en&entry=tts&g_ep=EgoyMDI0MDYxNS4wKgBIAVAD">Lokasi Acara</a>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.2451!2d107.0000!3d-6.4000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699ff4d6af16cd!2sCitraland%20Cibubur!5e0!3m2!1sid!2sid!4v1680000000000!5m2!1sid!2sid" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+     </section>
+     <!-- Bagian slider galeri -->
+     <section class="image-slider" id="imageslider">
+        <div class="slider-wrapper">
+            <div class="card">
+                <img src="img/download (15).jpeg" alt="Image 1" class="clickable-img">
+            </div>
+            <div class="card">
+                <img src="img/download (17).jpeg" alt="Image 2" class="clickable-img">
+            </div>
+            <div class="card">
+                <img src="img/download (19).jpeg" alt="Image 3" class="clickable-img">
+            </div>
+            <div class="card">
+                <img src="img/eloise.jpeg" alt="Image 4" class="clickable-img">
+            </div>
+        </div>
+    </section>
+     
+    <section class="video-section">
+        <div class="video-content">
+          <h2>Watch Our Video</h2>
+          <div class="video-wrapper">
+            <video width="100%" height="400" autoplay muted loop>
+                <source src="img/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+          </div>
+        </div>
+      </section>
+    
+      <section id="Tamu">
+                    <table data-aos="zoom-in-up">
+                        <caption data-aos="zoom-in">Daftar Tamu Khusus</caption>
+                        <tr>
+                            <th rowspan="2">No</th>
+                            <th rowspan="2">Nama</th>
+                            <th colspan="2">Keterangan</th>
+                        </tr>
+                        <tr>
+                            <th>Status</th>
+                            <th>Hubungan</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Hj.Sayadi</td>
+                            <td>Ustad</td>
+                            <td>Senior</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Pak Heri</td>
+                            <td >Guru Jurusan</td>
+                            <td>Guru</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Ilham</td>
+                            <td>Sodara Dekat</td>
+                            <td>Sodara </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Hilmi</td>
+                            <td>Teman Universitas Jakarta</td>
+                            <td>Teman</td>
+                        </tr>
+                    </table>
+                </section>
+        <!-- Pop-up container -->
+        <div id="popup" class="popup">
+            <span class="close">&times;</span>
+            <img class="popup-content" id="popup-img">
+        </div>
+        <section class="rsvp-section" id="rsvpsection">
+            <div class="rsvp-content">
+              <h2>RSVP</h2>
+              <p>Silakan konfirmasi kehadiran Anda dengan mengisi form di bawah ini:</p>
+          
+              <form class="rsvp-form">
+                <div class="form-group">
+                  <label for="name">Nama Lengkap:</label>
+                  <input type="text" id="name" name="name" placeholder="Nama lengkap Anda" required>
+                </div>
+          
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Alamat email" required>
+                </div>
+          
+                <div class="form-group">
+                  <label for="attendance">Jumblah Tamu Yang Di Bawa?</label>
+                  <select id="attendance" name="attendance" required>
+                    <option value="">0</option>
+                    <option value="yes">1</option>
+                    <option value="yes">2</option>
+                    <option value="yes">4</option>
+                    <option value="yes">6</option>
+                    <option value="yes">10</option>
+                    <option value="yes">20</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>Kedatangan</label>
+                  <div>
+                      <label><input type="radio" name="attendance" value="Yes" required> Datang :</label>
+                  </div>
+                  <div>
+                      <label><input type="radio" name="attendance" value="No"> Tidak Datang :</label>
+                  </div>
+              </div>
+
+              <div class="form-group">
+                <label>Datang Pada Saat</label>
+                <label><input type="checkbox" name="subscribe" value="Yes">Akad :</label>
+                <label><input type="checkbox" name="subscribe" value="Yes">Resepsi : </label>
+                <label><input type="checkbox" name="subscribe" value="Yes">Lusa : </label>
+            </div>
+          
+             </div>
+            </div>
+            
+                <div class="form-group">
+                  <label for="message">Pesan (Opsional):</label>
+                  <textarea id="message" name="message" placeholder="Pesan atau ucapan untuk kami" rows="4"></textarea>
+                </div>
+          
+                <button type="submit" class="submit-btn">Kirim RSVP</button>
+              </form>
+            </div>
+          </section>
+
+          <section class="story-section" id="storysection">
+            <div class="story-content">
+              <h2>Story</h2>
+              <p class="intro"></p>
+          
+              <div class="story-details">
+                <div class="story-text">
+                  <h3>Awal Bertemu</h3>
+                  <p>
+                    Semuanya dimulai secara tak terduga. Kami pertama kali bertemu pada tahun 2017 di acara ulang tahun seorang teman. Saat itu, perkenalan kami sangat sederhana, bahkan mungkin terlihat biasa saja. Siapa yang sangka, percakapan singkat mengenai cuaca dan hobi akan menjadi awal dari perjalanan indah ini?
+                    Apa yang awalnya hanya obrolan santai, berubah menjadi percakapan panjang yang penuh tawa dan kebahagiaan.
+                  </p>
+          
+                  <h3>First Date</h3>
+                  <p>
+                    Kencan resmi pertama kami sangat spesial. Kami memilih untuk menjaga kesederhanaan—makan malam di sebuah restoran kecil yang nyaman di pinggir pantai. Malam itu dipenuhi tawa, cerita masa lalu, dan impian untuk masa depan. Di malam itu, kami berdua tahu bahwa ini adalah awal dari sesuatu yang sangat istimewa.
+                  </p>          
+                <div class="story-image">
+                  <img src="img/✧_｡٩(ˊᗜˋ_)و✧_｡.jpeg" alt="Our journey">
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="gift-section" id="giftsection">
+            <div class="gift-content">
+              <h2>Kirim Gift/Transfer</h2>
+              <p class="intro">Jika Anda ingin memberikan hadiah atau transfer, silakan gunakan detail di bawah ini:</p>
+          
+              <div class="transfer-info">
+                <h3>Rekening</h3>
+                <p>Bank: BCA</p>
+                <p>Nomor Rekening: <span id="account-number">123-456-789</span>
+                    <button class="copy-btn" onclick="copyAccountNumber()">
+                      <img src="img/copy.png" alt="Copy Icon" class="copy-icon">
+                    </button>
+                 </p>           
+                <p>Atas Nama: JAY</p>
+              </div>
+          
+              <div class="qrcode-section">
+                <h3>Scan QR Code untuk Transfer</h3>
+                <img src="img/download (20).jpeg" alt="QR Code">
+              </div>
+          
+              <p class="thanks-message">Terima kasih atas perhatian dan kebaikan Anda.</p>
+            </div>
+          </section>
+
+          <section class="message-section">
+            <div class="message-content">
+              <h2>Pesan untuk Pengantin</h2>
+              <p>Jika Anda ingin memberikan pesan atau ucapan kepada pengantin, silakan isi form di bawah ini.</p>
+
+           
+          
+              <form class="message-form" action="#" method="post">
+                <label for="name">Nama Anda:</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+          
+                <label for="message">Pesan Anda:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Masukkan pesan atau ucapan Anda" required></textarea>
+          
+                <button type="submit">Kirim Pesan</button>
+              </form>
+            </div>
+          </section>
+          <section class="thankyou-section">
+            <div class="thankyou-content">
+              <h2>Terima Kasih</h2>
+              <p>Kami sangat bersyukur atas kehadiran dan doa restu Anda di hari yang sangat spesial ini.</p>
+              <p>Semoga kebaikan dan cinta kasih selalu menyertai kita semua.</p>
+            </div>
+          </section>
+  
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+        function copyAccountNumber() {
+          const accountNumber = document.getElementById('account-number').textContent;
+          navigator.clipboard.writeText(accountNumber).then(function() {
+            alert('Nomor rekening berhasil disalin!');
+          }, function(err) {
+            console.error('Gagal menyalin teks: ', err);
+          });
+        }
+      </script>
+      
+</body>
+</html>

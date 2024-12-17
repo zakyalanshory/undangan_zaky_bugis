@@ -1,0 +1,871 @@
+html {
+  scroll-behavior: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: #f8f4f0;
+  color: #5e4633;
+  scroll-behavior: smooth; /* Smooth scrolling when clicking on navbar links */
+}
+
+.hero {
+  background-image: url("img/PINK-ART-03-1.jpg"); /* Ganti dengan URL gambar yang diinginkan */
+  background-size: cover;
+  background-position: center;
+  width: 100vw; /* Sesuaikan lebar dengan viewport */
+  height: 100vh; /* Sesuaikan tinggi dengan viewport */
+  max-width: 600px; /* Tentukan lebar maksimum yang sesuai */
+  max-height: 1000px; /* Tentukan tinggi maksimum yang sesuai */
+  margin: 0 auto; /* Pusatkan secara horizontal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.1); /* Efek transparan */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #8a6d5a;
+  margin-bottom: 10px;
+}
+
+.names {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #5e4633;
+}
+
+.dear {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #8a6d5a;
+}
+
+.guest {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #5e4633;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #5e4633;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #4a3b2f;
+}
+
+.next-section {
+  background-image: url("img/PINK-ART-03-1.jpg"); /* Ganti dengan gambar latar belakang kedua */
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  max-width: 600px;
+  max-height: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.next-content {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.illustration img {
+  background: #f7d5d5;
+  width: 300px; /* Adjust the size as needed */
+  height: 380px; /* Adjust the size as needed */
+  border-radius: 100% / 120% 120% 80% 80%;
+  object-fit: cover; /* To ensure the image covers the mask area */
+}
+
+.date {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #5e4633;
+}
+
+.scroll-indicator {
+  margin-top: 20px;
+}
+
+.scroll-icon {
+  font-size: 50px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+/* Section Kutipan Ayat */
+.quote-section {
+  background-image: url("img/PINK-ART-04.webp");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 70vh;
+  max-width: 600px;
+  max-height: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.quote-content {
+  background: rgba(214, 32, 32, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.logo img {
+  width: 100px; /* Adjust the size as needed */
+  height: auto; /* Adjust the size as needed */
+  object-fit: cover; /* To ensure the image covers the mask area */
+}
+
+.quote-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fcfbfa;
+  margin-bottom: 10px;
+}
+
+.quote-source {
+  font-size: 16px;
+  font-style: italic;
+  color: #fffefd;
+}
+
+/* Section invitation */
+
+.invitation-section {
+  background-image: url("img/PINK-ART-03-1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  max-width: 600px;
+  max-height: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.invitation {
+  text-align: center;
+  max-width: 400px;
+  padding: 20px;
+  color: #5a4e4d; /* Text color matching the design */
+}
+
+.intro-text {
+  font-size: 14px;
+  color: #8b8b8b;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.couple-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.couple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.couple-img {
+  width: 150px; /* Adjust size as needed */
+  height: 200px; /* Adjust size as needed */
+  object-fit: cover;
+  border-radius: 100% / 120% 120% 80% 80%;
+  background: #e7e4e2;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #5a4e4d;
+  margin: 10px 0 5px;
+}
+
+.description {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+}
+
+.and-symbol {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5a4e4d;
+  margin: 10px 0;
+}
+/* Section reception date */
+.reseption-section {
+  background-image: url("img/PINK-ART-03-1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 120vh;
+  max-width: 600px;
+  max-height: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.invitation-container {
+  text-align: center;
+  max-width: 600px;
+  padding: 30px 20px;
+}
+
+.intro {
+  font-size: 1.1em;
+  color: #8d8d8d;
+  margin-bottom: 40px;
+}
+
+.event {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #7c6c5c;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+  color: #5a4f3e;
+  margin: 5px 0;
+}
+
+.location-button {
+  margin-top: 20px;
+}
+
+.location-button a {
+  text-decoration: none;
+  background-color: #b19777;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.location-button a:hover {
+  background-color: #9f8560;
+}
+.map-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  border: 1px;
+}
+
+/*slider */
+
+.image-slider {
+  background-color: aliceblue;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 30vh;
+  max-width: 600px;
+  max-height: 1100px;
+  overflow-x: auto;
+  margin: 0 auto;
+  display: flex;
+  white-space: nowrap;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slider-wrapper {
+  display: inline-flex;
+  gap: 20px;
+}
+
+.card {
+  padding-top: 20px;
+  flex: 0 0 auto;
+  width: 150px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(235, 233, 233, 0.1);
+  scroll-snap-align: start;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Custom Webkit Scrollbar */
+.image-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.image-slider::-webkit-scrollbar-thumb {
+  background-color: #f3ebeb;
+  border-radius: 5px;
+}
+
+.image-slider::-webkit-scrollbar-thumb:hover {
+  background-color: #a3a1a1;
+}
+
+/* Pop-up styles */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 15px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* floating-navbar */
+.floating-navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.floating-navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #555;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.floating-navbar a:hover {
+  background-color: #777;
+}
+
+.rsvp-section {
+  background-image: url("img/PINK-ART-03-1.jpg");
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rsvp-content {
+  text-align: center;
+}
+
+.rsvp-content h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.rsvp-content p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.rsvp-form {
+  text-align: left;
+}
+
+.form-group {
+  margin-center: 100px;
+  
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.story-section {
+  background-image: url("img/PINK-ART-03-1.jpg");
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.story-content {
+  text-align: center;
+}
+
+.story-content h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.story-content .intro {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.story-details {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.story-text h3 {
+  font-size: 1.8rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.story-text p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.story-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .story-details {
+    flex-direction: row;
+  }
+
+  .story-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  .story-image {
+    flex: 1;
+  }
+}
+
+.floating-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.floating-btn:hover {
+  background-color: #555;
+}
+
+.video-section {
+  background-image: url("img/PINK-ART-03-1.jpg");
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-content {
+  text-align: center;
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.video-wrapper video {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .image-grid {
+    flex-direction: column;
+  }
+}
+
+.gift-section {
+  background-image: url("img/PINK-ART-03-1.jpg");
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.gift-content {
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.transfer-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.transfer-info h3 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.transfer-info p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+.copy-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.copy-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.qrcode-section {
+  margin-bottom: 30px;
+}
+
+.qrcode-section h3 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.qrcode-section img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.thanks-message {
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .gift-section {
+    padding: 20px;
+  }
+
+  .transfer-info {
+    text-align: center;
+  }
+}
+
+
+
+.message-section {
+  background-image: url("img/PINK-ART-03-1.jpg");
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.message-content {
+  text-align: center;
+}
+
+.message-form {
+  margin-top: 30px;
+}
+
+.message-form label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.message-form input,
+.message-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.message-form button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message-form button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .message-section {
+    padding: 20px;
+  }
+}
+.thankyou-section {
+  background-image: url("img/PINK-ART-03-1.jpg");
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.thankyou-content p {
+  margin-bottom: 20px;
+}
+
+.signature {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-top: 40px;
+  color: #333;
+}
+
+.couple-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+#Tamu {
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  margin: 5px;
+  background: url(Src/texture4.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+table {
+  width: 90vw;
+  margin: auto;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin-top: 50px;
+}
+
+th,
+td {
+  padding: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #d8c4b6;
+  color: white;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+caption {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: "Playwrite CU", cursive;
+}
+
+@media (max-width: 768px) {
+  .thankyou-section {
+    padding: 20px;
+  }
+}
